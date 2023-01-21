@@ -1,0 +1,3 @@
+".\Objects\Switching  Led.obj" 
+TO ".\Objects\Switching Led" 
+PRINT(".\Listings\Switching Led.m51") RAMSIZE(256) 

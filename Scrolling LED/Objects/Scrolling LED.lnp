@@ -1,0 +1,3 @@
+".\Objects\Scrolling LED.obj" 
+TO ".\Objects\Scrolling LED" 
+PRINT(".\Listings\Scrolling LED.m51") RAMSIZE(256) 

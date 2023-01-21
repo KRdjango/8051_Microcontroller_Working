@@ -1,0 +1,87 @@
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    01/14/2023  22:49:05  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\LED blinking using 8051.obj TO .\Objects\LED Blinking using 8051 PRINT (.\Listings
+>> \LED Blinking using 8051.m51)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\LED blinking using 8051.obj (LED_BLINKING_USING_8051)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\LED Blinking using 8051 (LED_BLINKING_USING_8051)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     000FH     UNIT         ?PR?DELAY?LED_BLINKING_USING_8051
+            CODE    080FH     000EH     UNIT         ?PR?MAIN?LED_BLINKING_USING_8051
+            CODE    081DH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\LED Blinking using 8051 (LED_BLINKING_USING_8051)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?LED_BLINKING_USING_8051
+
+?PR?MAIN?LED_BLINKING_USING_8051
+  +--> ?PR?DELAY?LED_BLINKING_USING_8051
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\LED Blinking using 8051 (LED_BLINKING_USING_8051)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        LED_BLINKING_USING_8051
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:00A0H         PUBLIC        P2
+  C:0800H         PUBLIC        delay
+  C:080FH         PUBLIC        main
+  -------         PROC          DELAY
+  -------         DO            
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  01/14/2023  22:49:05  PAGE 2
+
+
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0800H         LINE#         3
+  C:0800H         LINE#         5
+  C:080EH         LINE#         6
+  -------         ENDPROC       DELAY
+  -------         PROC          MAIN
+  C:080FH         LINE#         7
+  C:080FH         LINE#         8
+  C:080FH         LINE#         9
+  C:0812H         LINE#         10
+  C:0815H         LINE#         11
+  C:0818H         LINE#         12
+  C:081BH         LINE#         13
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        LED_BLINKING_USING_8051
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 001DH BYTE ( 1%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=44
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
